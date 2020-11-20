@@ -11,8 +11,10 @@
 using namespace std;
 
 /*
- Inicializo mi segunda clase, que va enfocada principalmente a los métodos de transporte que tiene mi papá dependiendo de la situación, cuenta con una grúa, camionetas de carga y descarga, e intenté hacerlo lo más semejante posible.
- */
+Inicializo mi segunda clase, que va enfocada principalmente a los métodos de transporte que
+tiene mi papá dependiendo de la situación, cuenta con una grúa, camionetas de carga y
+descarga, e intenté hacerlo lo más semejante posible.
+  */
 class Transporte{
     /*
      Declaro los atributos privados de mi clase transporte, enfocado a lo más importante
