@@ -14,6 +14,9 @@ using namespace std;
  Declaro mi primera clase para el programa, que en este caso es el negocio, introduzco losproductos que se usan, y todo lo que se vea relacionado con ellos, por ejemplo la cantidad de venta o renta, cuánto cuesta cada unidad, datos de clientes, etc.
  */
 class Negocio{
+    /*
+     Declaro los atributos privados de mi clase negocio, enfocado a lo más importante
+     */
 private:
     string concepto;
     float ingreso;
@@ -24,7 +27,7 @@ private:
     float utilidad;
 public:
     /*
-     Inicializo el constructor, y seguidamente los getters y los setters.
+     Inicializo el constructor
      */
     Negocio(){
         this -> ingreso = 0;
@@ -35,6 +38,9 @@ public:
         this -> nombreCliente = "";
         this -> telefonoCliente = "";
     }
+    /*
+     Inicializo los getters
+     */
     float getIngreso(){
         return this -> ingreso;
     }
@@ -56,6 +62,10 @@ public:
     string getTelefonoCliente(){
         return this -> telefonoCliente;
     }
+
+    /*
+     Inicializo los setters
+     */
     void setIngreso(float ingreso){
         this -> ingreso = ingreso;
     }
@@ -78,9 +88,6 @@ public:
         this -> utilidad = ingreso * cantidad;
         cout << " La utilidad se ha cambiado con éxito " << endl;
     }
-    
-    
-    
     /*
     Esta función me ayuda a imprimir los datos sobre los productos y los respectivos clientes, y me ayuda a mantener de forma más corta mi programa.
      */

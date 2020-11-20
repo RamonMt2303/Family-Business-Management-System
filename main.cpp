@@ -12,6 +12,10 @@
 #include "Empleados.h"
 using namespace std;
 
+/*
+ Creo una función que me imprima el menú, para no repetir código
+ */
+
 void printMenu(){
     cout << " ¿Qué deseas hacer?" << endl;
     cout << " 1 para entrar al sistema " << endl;
@@ -20,10 +24,19 @@ void printMenu(){
     cout << " ó 0 para salir " << endl;
 }
 
+/*
+ Creo la función principal, que va a llamar a los archivos
+ donde están las clases guardadas por separado, para tener más limpio el main
+ */
+
 int main() {
     int confirmacion = 0;
     printMenu();
     cin >> confirmacion;
+    /*
+     Creo una condición para crear el menú, y el usuario pueda
+     interactuar con las diversas opciones que se ofrecen
+     */
     if (confirmacion == 0){
         cout << " Gracias por usar el sistema " << endl;
     }else{

@@ -9,8 +9,14 @@
 #define Empleados_h
 #include <iostream>
 using namespace std;
+/*
+ Declaro mi tercera clase para el programa, que en este caso son los empleados, se introducen datos personales, para llevar un seguimiento de ellos, y estar al tanto
+ */
 
 class Empleados{
+    /*
+     Declaro los atributos privados de mi clase empleados, enfocado a lo más importante
+     */
 private:
     float sueldo;
     string nombre;
@@ -23,6 +29,9 @@ private:
     int antiguedad;
     string estadoCivil;
 public:
+    /*
+     Inicializo el constructor
+     */
     Empleados(){
         this -> sueldo = 0;
         this -> nombre = "";
@@ -35,6 +44,11 @@ public:
         this -> antiguedad = 0;
         this -> estadoCivil = "";
     }
+    
+    /*
+     Inicializo los getters
+     */
+    
     float getSueldo(){
         return this -> sueldo;
     }
@@ -65,7 +79,11 @@ public:
     string getEstadoCivil(){
         return this -> estadoCivil;
     }
-
+    
+    /*
+     Inicializo los setters
+     */
+    
     void setSueldo(float sueldo){
         this -> sueldo = sueldo;
     }
@@ -96,7 +114,10 @@ public:
     void setEstadoCivil(string estado){
         this -> estadoCivil = estado;
     }
-    
+    /*
+     Uso las funciones de imprimir y llenar datos, para hacerlo más sencillo el programa,
+     y mantener reusabilidad
+     */
     void llenarInfo(){
         float sueldo = 0;
         string nombre = "";

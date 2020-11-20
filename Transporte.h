@@ -11,9 +11,12 @@
 using namespace std;
 
 /*
- Inicializo mi segunda clase, que va enfocada principalmente a los métodos de transporte que\ tiene mi papá dependiendo de la situación, cuenta con una grúa, camionetas de carga y\ descarga, e intenté hacerlo lo más semejante posible.
+ Inicializo mi segunda clase, que va enfocada principalmente a los métodos de transporte que tiene mi papá dependiendo de la situación, cuenta con una grúa, camionetas de carga y descarga, e intenté hacerlo lo más semejante posible.
  */
 class Transporte{
+    /*
+     Declaro los atributos privados de mi clase transporte, enfocado a lo más importante
+     */
 private:
     float gasolina;
     string nombre;
@@ -21,7 +24,9 @@ private:
     float capacidad;
     string concepto;
     float costoCombustible;
-    
+    /*
+     Inicializo el constructor
+     */
 public:
     Transporte(){
         this -> gasolina = 0;
@@ -31,6 +36,9 @@ public:
         this -> concepto = "";
         this -> costoCombustible = 0;
     }
+    /*
+     Inicializo los getters
+     */
     float getGasolina(){
         return this -> gasolina;
     }
@@ -49,6 +57,9 @@ public:
     float getCostoCombustible(){
         return this -> costoCombustible;
     }
+    /*
+     Inicializo los setters
+     */
     void setGasolina(float gasolina){
         this -> gasolina = gasolina;
     }
@@ -68,6 +79,10 @@ public:
         this -> costoCombustible = costo;
     }
     
+    /*
+     Uso las funciones de imprimir y llenar datos, para hacerlo más sencillo el programa,
+     y mantener reusabilidad
+     */
     void printInfo(){
         cout << " El vehículo es " <<getNombre() << endl;
         cout << " El tipo del vehículo es " <<getTipoVehiculo() << endl;
