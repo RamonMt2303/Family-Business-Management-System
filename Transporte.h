@@ -47,9 +47,6 @@ public:
     string getNombre(){
         return this -> nombre;
     }
-    string getTipoVehiculo(){
-        return this -> tipoVehiculo;
-    }
     float getCapacidad(){
         return this -> capacidad;
     }
@@ -68,9 +65,6 @@ public:
     void setNombre(string nombre){
         this -> nombre = nombre;
     }
-    void setTipoVehiculo(string vehiculo){
-        this -> tipoVehiculo = vehiculo;
-    }
     void setCapacidad(float capacidad){
         this -> capacidad = capacidad;
     }
@@ -87,7 +81,6 @@ public:
      */
     void printInfo(){
         cout << " El vehículo es " <<getNombre() << endl;
-        cout << " El tipo del vehículo es " <<getTipoVehiculo() << endl;
         cout << " El vehículo es capáz de cargar " <<getCapacidad() <<" kg " << endl;
         cout << " El concepto del uso para este vehículo es " << getConcepto() << endl;
         cout << " El vehículo tiene actualmente " <<getGasolina() <<" litros de gasolina" << endl;
@@ -97,7 +90,6 @@ public:
     void llenarInfo(){
         string nombre = "";
         float gasolina = 0;
-        string tipo = "";
         float carga = 0;
         string conceptoUso = "";
         float costoCombustible = 0;
@@ -106,10 +98,6 @@ public:
         cin.ignore();
         getline(cin, nombre);
         setNombre(nombre);
-        cout << " ¿De qué tipo es el vehículo? Carga pesada, transporte de personal, etc" << endl;
-        cin.ignore();
-        getline(cin, tipo);
-        setTipoVehiculo(tipo);
         cout << " ¿Cuánto puede cargar aprox (en kg)? " << endl;
         cin >> carga;
         setCapacidad(carga);
