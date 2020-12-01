@@ -11,17 +11,12 @@
 #include <iostream>
 using namespace std;
 
+
+
 /*
- * Primera clase del programa. Ventas
- * @param string concepto, float ingreso, int cantidadProductos, float utilidad
- * @return 
+ * Defino mi clase Ventas.
  */
-
-
 class Ventas{
-    /*
-     * Declaro los atributos privados de mi clase negocio, enfocado a lo más importante
-     */
 private:
     string concepto;
     float ingreso;
@@ -30,7 +25,7 @@ private:
     DatosPersonales datosClientes;
 public:
     /*
-     * Inicializo el constructor
+     * Inicializo el constructor.
      */
     Ventas(){
         this -> ingreso = 0;
@@ -41,43 +36,76 @@ public:
     }
     
     /*
-     * Inicializo los getters
+     * La función getIngreso, nos regresa el costo por cada unidad de la venta/renta.
+     * @return ingreso Costo por cada unidad.
      */
     float getIngreso(){
         return this -> ingreso;
     }
+    /*
+     * La función getConcepto, nos regresa el concepto del ingreso monetario.
+     * @return concepto Concepto del ingreso.
+     */
     string getConcepto(){
         return this -> concepto;
     }
+    /*
+     * La función getCantidadProductos, nos regresa la cantidad de productos que se vendieron/rentaron.
+     * @return cantidadProductos Cantidad de productos vendidos/rentados.
+     */
     int getCantidadProductos(){
         return this -> cantidadProductos;
     }
+    /*
+     * La función getUtilidad, nos regresa la utilidad, obtenida de la venta/renta.
+     * @return utilidad Utilidad de la venta/renta.
+     */
     float getUtilidad(){
         return this -> utilidad;
     }
+    /*
+     * La función DatosPersonales, nos regresa los datos personales de los clientes, para registrarlos.
+     * @return datosClientes Datos personales de los clientes para registrarlos, como nombre, teléfono, dirección, etc.
+     */
     DatosPersonales getDatosPersonales(){
         return this -> datosClientes;
     }
     /*
-     Inicializo los setters
+     * La función setIngreso, nos ayuda a asignar el ingreso por cada peiza vendida/rentada.
+     * @param ingreso Costo por cada unidad vendida/rentada.
      */
     void setIngreso(float ingreso){
         this -> ingreso = ingreso;
     }
+    /*
+     * La función setConcepto, nos ayuda a asignar el concepto de la venta/renta.
+     * @param concepto Concepto de la venta.
+     */
     void setConcepto(string concepto){
         this -> concepto = concepto;
     }
+    /*
+     * La función setCantidadProductos, nos ayuda a asignar la cantidad de piezas vendidas/rentadas.
+     * @param cantidadProductos Cantidad de piezas vendidas/rentadas.
+     */
     void setCantidadProductos(int cantidad){
         this -> cantidadProductos = cantidad;
     }
+    /*
+     * La función setUtilidad, nos ayuda a asignar el ingreso por cada peiza vendida/rentada, y la cantidad de piezas, para obtener la utilidad.
+     * @param ingreso Costo por cada unidad vendida/rentada.
+     * @param cantidad Cantidad de piezas vendidas/rentadas.
+     */
     void setUtilidad(float ingreso, int cantidad){
         this -> utilidad = ingreso * cantidad;
         cout << " La utilidad se ha cambiado con éxito " << endl;
     }
-    DatosPersonales setDatosPersonales;
-        
     /*
-    Esta función me ayuda a imprimir los datos sobre los productos y los respectivos clientes, y me ayuda a mantener de forma más corta mi programa.
+     * La función setDatosPersonales, nos ayuda a asignar los datos personales de los clientes, a los que se les ofreció el servicio.
+     */
+    DatosPersonales setDatosPersonales;
+    /*
+     * La función printInfo, nos ayuda a imprimir los valores que fueron ingresados anteriormente, como el concepto, ingreso, cantidad de productos, datos personales, etc.
      */
     void printInfo(){
         cout <<" El concepto del ingreso es: " << getConcepto() << endl;
@@ -87,9 +115,8 @@ public:
         cout <<" La utilidad de esta venta/renta fue de: " << getUtilidad() <<" pesos "<< endl;
     }
     /*
-    Esta función me ayuda como auxiliar para llenar los datos de los objetos de las
-     distintas clases, para ayudarme a no repetir código y ser más eficiente.
-    */
+     * La función llenarDatos, nos ayuda a los input de los valores, para después ser asignados a los setters.
+     */
     void llenarDatos(){
         float ingreso;
         int cantidadProductos;

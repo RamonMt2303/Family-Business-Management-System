@@ -13,7 +13,7 @@
 using namespace std;
 
 /*
- * Creo una función que me imprima el menú.
+ * La función menú imprime las múltiples opciones.
  */
 
 void printMenu(){
@@ -25,7 +25,7 @@ void printMenu(){
 }
 
 /*
- * Creo la función principal, que va a llamar a los archivos
+ * Creo la clase empresa, que va a llamar a los archivos
  * donde están las clases guardadas por separado, para tener más limpio el main
  */
 
@@ -33,12 +33,16 @@ class Empresa{
 private:
     int confirmacion;
 public:
+    /*
+     * Inicio el constructor de la clase
+     */
+    Empresa(){
+        this -> confirmacion = 0;
+    }
+    /*
+     * La función menú me va a ayudar a hacer la función de un menú, para acceder a las diferentes clases.
+     */
     void menu(){
-        /*
-         * Creo una condición para crear el menú, y el usuario pueda
-         * interactuar con las diversas opciones que se ofrecen
-         */
-        
         int confirmacion = 0;
         printMenu();
         cin >> confirmacion;
@@ -73,10 +77,8 @@ public:
 };
 
 /*
- * Creo la función main, que va a llamar a los archivos
- * donde están las clases guardadas por separado.
+ * Se crea la instancia principal de la empresa, y mando a llamar el menú.
  */
-
 int main(){
     Empresa menu;
     menu.menu();
