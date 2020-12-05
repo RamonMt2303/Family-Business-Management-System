@@ -11,7 +11,8 @@
 using namespace std;
 
 /*
-* Defino mi clase Transporte, que obtiene los datos generales de los vehículos en el negocio y sus funciones que desempeñan.
+* Defino mi clase Transporte, que obtiene los datos generales de los vehículos
+* en el negocio y sus funciones que desempeñan.
 */
 class Transporte{
 private:
@@ -33,41 +34,49 @@ public:
         this -> concepto = "";
         this -> costoCombustible = 0;
     }
+    
     /*
-     * La función de gasolina, nos regresa la cantidad que tiene el tanque del vehículo a registrar
+     * La función getGasolina, nos regresa la cantidad que tiene el tanque del
+     * vehículo a registrar
      * @return gasolina Cantidad de combustible en el tanque del vehículo.
      */
     float getGasolina(){
         return this -> gasolina;
     }
+    
     /*
-     * La función de gasolina, nos regresa la cantidad que tiene el tanque del vehículo a registrar.
-     * @return gasolina Cantidad de combustible en el tanque del vehículo.
+     * La función getNombre, nos regresa el nombre del vehículo a registrar.
+     * @return nombre Nombre del vehículo.
      */
     string getNombre(){
         return this -> nombre;
     }
+    
     /*
-     * La función de capacidad, nos regresa la capacidad que puede cargar el vehículo.
+     * La función getCapacidad, nos regresa la capacidad que puede cargar el vehículo.
      * @return capacidad Capacidad que puede cargar el vehículo.
      */
     float getCapacidad(){
         return this -> capacidad;
     }
+    
     /*
-     * La función de concpeto, nos regresa el concepto con el que será usado el vehículo.
+     * La función getConcepto, nos regresa el concepto con el que será usado el vehículo.
      * @return concepto Concepto con el que se va a utilizar el vehículo.
      */
     string getConcepto(){
         return this -> concepto;
     }
+    
     /*
-     * La función de costo del combustible, nos regresa el costo por kilómetro recorrido del vehículo, para así sacar su rendimiento de combustible.
+     * La función getCostoCombustible, nos regresa el costo por kilómetro recorrido del
+     * vehículo, para así sacar su rendimiento de combustible.
      * @return costoCombustible Costo por cada kilómetro recorrido.
      */
     float getCostoCombustible(){
         return this -> costoCombustible;
     }
+    
     /*
      * La función setGasolina, nos ayuda a asignarle un valor a la gasolina dentro del vehículo.
      *@param gasolina Cantidad de asolina que está dentro del tanque de combustible.
@@ -75,6 +84,7 @@ public:
     void setGasolina(float gasolina){
         this -> gasolina = gasolina;
     }
+    
     /*
      * La función setNombre, nos ayuda a asignar el nombre del vehículo.
      *@param nombre Nombre del vehículo.
@@ -82,13 +92,16 @@ public:
     void setNombre(string nombre){
         this -> nombre = nombre;
     }
+    
     /*
-     * La función setCapacidad, nos ayuda a asignar la capacidad que tiene cada vehículo, y cuánto personal puede transportar.
+     * La función setCapacidad, nos ayuda a asignar la capacidad que tiene cada vehículo,
+     * y cuánto personal puede transportar.
      *@param capacidad Capacidad de espacios dentro del vehículo.
      */
     void setCapacidad(float capacidad){
         this -> capacidad = capacidad;
     }
+    
     /*
      * La función setConcepto, nos ayuda a asignar el concepto del uso del vehículo.
      *@param concepto Concepto con el que será utilizado el vehículo.
@@ -96,6 +109,7 @@ public:
     void setConcepto(string concepto){
         this -> concepto = concepto;
     }
+    
     /*
      * La función setCostoCombustible, nos ayuda a asignar el costo en pesos por cada kilómetro recorrido.
      *@param costo Costo por cada kilómetro recorrido.
@@ -105,7 +119,8 @@ public:
     }
     
     /*
-     * La función printInfo, nos ayuda a imprimir los valores que fueron ingresados anteriormente, como el nombre, capacidad, gasolina, etc.
+     * La función printInfo, nos ayuda a imprimir los valores que fueron ingresados
+     * anteriormente, como el nombre, capacidad, gasolina, etc.
      */
     void printInfo(){
         cout << " El vehículo es " <<getNombre() << endl;
@@ -114,8 +129,10 @@ public:
         cout << " El vehículo tiene actualmente " <<getGasolina() <<" litros de gasolina" << endl;
         cout << " El costo por cada km recorrido de combustible es de " << getCostoCombustible() << " pesos/km " << endl;
     }
+    
     /*
-     * La función llenarInfo, nos ayuda a los input de los valores, para después ser asignados a los setters.
+     * La función llenarInfo, nos ayuda a los input de los valores,
+     * para después ser asignados a los setters.
      */
     void llenarInfo(){
         string nombre = "";

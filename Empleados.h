@@ -46,6 +46,7 @@ public:
         this -> antiguedad = 0;
         this -> estadoCivil = " ";
     }
+    
     /*
      * La función getNombre, nos regresa el nombre del empleado.
      * @return nombre Nombre del empleado.
@@ -53,6 +54,7 @@ public:
     string getNombre(){
         return this -> nombre;
     }
+    
     /*
      * La función getEdad, nos regresa la edad del empleado.
      * @return edad Edad del empleado.
@@ -60,6 +62,7 @@ public:
     int getEdad(){
         return this -> edad;
     }
+    
     /*
      * La función getEspecialidad, nos regresa la especialidad del empleado.
      * @return especialidad Especialidad del empleado.
@@ -67,13 +70,16 @@ public:
     string getEspecialidad(){
         return this -> especialidad;
     }
+    
     /*
-     * La función getProductividad, nos regresa la productividad del empleado dentro del negocio.
+     * La función getProductividad, nos regresa la productividad del empleado
+     * dentro del negocio.
      * @return productividad Productividad del empleado.
      */
     string getProductividad(){
         return this -> productividad;
     }
+    
     /*
      * La función getPreparacion, nos regresa la preparación educativa del empleado.
      * @return preparacion Nivel de preparación del empleado.
@@ -81,6 +87,7 @@ public:
     string getPreparacion(){
         return this -> preparacion;
     }
+    
     /*
      * La función getEquipo, nos regresa si el empleado sabe o no trabajar en equipo.
      * @return equipo Sabe o no sabe trabajar en equipo.
@@ -88,6 +95,7 @@ public:
     string getEquipo(){
         return this -> equipo;
     }
+    
     /*
      * La función getAntiguedad, nos regresa los años de antiguedad del empleado en el negocio.
      * @return antiguedad Años en el negocio.
@@ -95,6 +103,7 @@ public:
     int getAntiguedad(){
         return this -> antiguedad;
     }
+    
     /*
      * La función getEstadoCivil, nos regresa el estado civil del empleado.
      * @return estadoCivil Estado civil del empleado.
@@ -102,6 +111,7 @@ public:
     string getEstadoCivil(){
         return this -> estadoCivil;
     }
+    
     /*
      * La función getSueldoEmpleados, nos regresa el sueldo del empleado.
      * @return sueldo Sueldo del empleado.
@@ -109,6 +119,7 @@ public:
     SueldoEmpleados getSueldoEmpleados(){
         return this -> sueldo;
     }
+    
     /*
      * La función getOcupacion, nos regresa la ocupación del empleado en el negocio.
      * @return ocupacion Ocupación del empleado en el negocio.
@@ -116,20 +127,25 @@ public:
     Ocupacion getOcupacion(){
         return this -> ocupacion;
     }
+    
     /*
-     * La función getOcupacionAdmin, nos regresa la ocupación del empleado en el negocio en caso de ser de la parte administrativa.
+     * La función getOcupacionAdmin, nos regresa la ocupación del empleado en el negocio,
+     * en caso de ser de la parte administrativa.
      * @return ocupacionAdmin Ocupación del empleado en el negocio en el área administrativa.
      */
     Administrativo getOcupacionAdmin(){
         return this -> ocupacionAdmin;
     }
+    
     /*
-     * La función getOcupacionLaboral, nos regresa la ocupación del empleado en el negocio en caso de ser de la parte laboral.
+     * La función getOcupacionLaboral, nos regresa la ocupación del empleado en el negocio,
+     * en caso de ser de la parte laboral.
      * @return ocupacionLaboral Ocupación del empleado en el negocio en el área laboral.
      */
     Laboral getOcupacionLaboral(){
         return this -> ocupacionLaboral;
     }
+    
     /*
      * La función setNombre, nos ayuda a asignar el nombre del empleado.
      * @param nombre Nombre del empleado.
@@ -137,6 +153,7 @@ public:
     void setNombre(string Nombre){
         this -> nombre = Nombre;
     }
+    
     /*
      * La función setEdad, nos ayuda a asignar la edad del empleado.
      * @param edad Edad del empleado.
@@ -144,6 +161,7 @@ public:
     void setEdad(int Edad){
         this -> edad = Edad;
     }
+    
     /*
      * La función setEspecialidad, nos ayuda a asignar la especialidad del empleado.
      * @param Especialidad Especialidad del empleado.
@@ -151,6 +169,7 @@ public:
     void setEspecialidad(string Especialidad){
         this -> especialidad = Especialidad;
     }
+    
     /*
      * La función setProductividad, nos ayuda a asignar el nivel de productividad del empleado.
      * @param Productividad Nivel de productividad del empleado.
@@ -158,13 +177,16 @@ public:
     void setProductividad(string Productividad){
         this -> productividad = Productividad;
     }
+    
     /*
-     * La función setPreparacion, nos ayuda a asignar el nivel de preparación educativa del empleado.
+     * La función setPreparacion, nos ayuda a asignar el nivel de preparación
+     * educativa del empleado.
      * @param Preparacion Nivel de preparación educativa del empleado.
      */
     void setPreparacion(string Preparacion){
         this -> preparacion = Preparacion;
     }
+    
     /*
      * La función setEquipo, nos ayuda a asignar si el empleado sabe trabajar en equipo o no.
      * @param Equipo Sabe o no sabe trabajar en equipo.
@@ -172,6 +194,7 @@ public:
     void setEquipo(string Equipo){
         this -> equipo = Equipo;
     }
+    
     /*
      * La función setAntiguedad, nos ayuda a asignar los años de antiguedad del empleado en el negocio.
      * @param Antiguedad Años de antiguedad en el negocio.
@@ -179,6 +202,7 @@ public:
     void setAntiguedad(int Antiguedad){
         this -> antiguedad = Antiguedad;
     }
+    
     /*
      * La función setEstadoCivil, nos ayuda a asignar el estado civil del empleado.
      * @param Estado Estado civil del empleado.
@@ -186,25 +210,32 @@ public:
     void setEstadoCivil(string Estado){
         this -> estadoCivil = Estado;
     }
+    
     /*
      * La función setSueldoEmpleados, nos ayuda a asignar el sueldo del empleado.
      */
     SueldoEmpleados setSueldoEmpleados;
+    
     /*
      * La función setOcupacion, nos ayuda a asignar la ocupación del empleado.
      */
     Ocupacion setOcupacion;
+    
     /*
-     * La función setOcupacionAdmin, nos ayuda a asignar la ocupación del empleado, en caso de ser parte de el área administrativa.
+     * La función setOcupacionAdmin, nos ayuda a asignar la ocupación del empleado,
+     * en caso de ser parte de el área administrativa.
      */
     Administrativo setOcupacionAdmin;
+    
     /*
-     * La función setOcupacionLaboral, nos ayuda a asignar la ocupación del empleado, en caso de ser parte de el área laboral.
+     * La función setOcupacionLaboral, nos ayuda a asignar la ocupación del empleado,
+     * en caso de ser parte de el área laboral.
      */
     Laboral setOcupacionLaboral;
     
     /*
-     * La función llenarInfo, nos ayuda a los input de los valores, para después ser asignados a los setters.
+     * La función llenarInfo, nos ayuda a los input de los valores,
+     * para después ser asignados a los setters.
      */
     void llenarInfo(){
         string nombre;
@@ -253,7 +284,8 @@ public:
         setEstadoCivil(estadoCivil);
     }
     /*
-     * La función printInfo, nos ayuda a imprimir los valores que fueron ingresados anteriormente, como el sueldo, IVA, sueldo por hora, etc.
+     * La función printInfo, nos ayuda a imprimir los valores que fueron ingresados
+     * anteriormente, como el sueldo, IVA, sueldo por hora, etc.
      */
     void printInfo(){
         cout << " El nombre del empleado es " << getNombre() << endl;

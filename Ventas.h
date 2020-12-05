@@ -42,6 +42,7 @@ public:
     float getIngreso(){
         return this -> ingreso;
     }
+    
     /*
      * La función getConcepto, nos regresa el concepto del ingreso monetario.
      * @return concepto Concepto del ingreso.
@@ -49,6 +50,7 @@ public:
     string getConcepto(){
         return this -> concepto;
     }
+    
     /*
      * La función getCantidadProductos, nos regresa la cantidad de productos que se vendieron/rentaron.
      * @return cantidadProductos Cantidad de productos vendidos/rentados.
@@ -56,6 +58,7 @@ public:
     int getCantidadProductos(){
         return this -> cantidadProductos;
     }
+    
     /*
      * La función getUtilidad, nos regresa la utilidad, obtenida de la venta/renta.
      * @return utilidad Utilidad de la venta/renta.
@@ -63,13 +66,17 @@ public:
     float getUtilidad(){
         return this -> utilidad;
     }
+    
     /*
-     * La función DatosPersonales, nos regresa los datos personales de los clientes, para registrarlos.
-     * @return datosClientes Datos personales de los clientes para registrarlos, como nombre, teléfono, dirección, etc.
+     * La función DatosPersonales, nos regresa los datos personales de los clientes,
+     * para registrarlos.
+     * @return datosClientes Datos personales de los clientes para registrarlos,
+     * como nombre, teléfono, dirección, etc.
      */
     DatosPersonales getDatosPersonales(){
         return this -> datosClientes;
     }
+    
     /*
      * La función setIngreso, nos ayuda a asignar el ingreso por cada peiza vendida/rentada.
      * @param ingreso Costo por cada unidad vendida/rentada.
@@ -77,6 +84,7 @@ public:
     void setIngreso(float ingreso){
         this -> ingreso = ingreso;
     }
+    
     /*
      * La función setConcepto, nos ayuda a asignar el concepto de la venta/renta.
      * @param concepto Concepto de la venta.
@@ -84,15 +92,19 @@ public:
     void setConcepto(string concepto){
         this -> concepto = concepto;
     }
+    
     /*
-     * La función setCantidadProductos, nos ayuda a asignar la cantidad de piezas vendidas/rentadas.
+     * La función setCantidadProductos, nos ayuda a asignar la cantidad
+     * de piezas vendidas/rentadas.
      * @param cantidadProductos Cantidad de piezas vendidas/rentadas.
      */
     void setCantidadProductos(int cantidad){
         this -> cantidadProductos = cantidad;
     }
+    
     /*
-     * La función setUtilidad, nos ayuda a asignar el ingreso por cada peiza vendida/rentada, y la cantidad de piezas, para obtener la utilidad.
+     * La función setUtilidad, nos ayuda a asignar el ingreso por cada peiza vendida/rentada,
+     * y la cantidad de piezas, para obtener la utilidad.
      * @param ingreso Costo por cada unidad vendida/rentada.
      * @param cantidad Cantidad de piezas vendidas/rentadas.
      */
@@ -100,12 +112,16 @@ public:
         this -> utilidad = ingreso * cantidad;
         cout << " La utilidad se ha cambiado con éxito " << endl;
     }
+    
     /*
-     * La función setDatosPersonales, nos ayuda a asignar los datos personales de los clientes, a los que se les ofreció el servicio.
+     * La función setDatosPersonales, nos ayuda a asignar los datos personales
+     * de los clientes, a los que se les ofreció el servicio.
      */
     DatosPersonales setDatosPersonales;
+    
     /*
-     * La función printInfo, nos ayuda a imprimir los valores que fueron ingresados anteriormente, como el concepto, ingreso, cantidad de productos, datos personales, etc.
+     * La función printInfo, nos ayuda a imprimir los valores que fueron ingresados
+     * anteriormente, como el concepto, ingreso, cantidad de productos, datos personales, etc.
      */
     void printInfo(){
         cout <<" El concepto del ingreso es: " << getConcepto() << endl;
@@ -114,8 +130,10 @@ public:
         getDatosPersonales().printInfo();
         cout <<" La utilidad de esta venta/renta fue de: " << getUtilidad() <<" pesos "<< endl;
     }
+    
     /*
-     * La función llenarDatos, nos ayuda a los input de los valores, para después ser asignados a los setters.
+     * La función llenarDatos, nos ayuda a los input de los valores,
+     * para después ser asignados a los setters.
      */
     void llenarDatos(){
         float ingreso;

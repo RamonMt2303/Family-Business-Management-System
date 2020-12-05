@@ -42,7 +42,8 @@ public:
         this -> confirmacion = 0;
     }
     /*
-     * La función menú me va a ayudar a hacer la función de un menú, para acceder a las diferentes clases.
+     * La función menú me va a ayudar a hacer la función de un menú,
+     * para acceder a las diferentes clases.
      */
     void menu(){
         int confirmacion = 0;
