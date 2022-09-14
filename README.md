@@ -1,17 +1,17 @@
-# Proyecto-Negocio-familiar-A01702917
-Programa elaborado en C++, para la administración de un negocio familiar.
-Es un programa que sirve como un administrador de el negocio, y ayuda a llevar las cuentas de productos
-ofrecidos, y registrar clientes, direcciones, etc, para tener un mejor registro de los clientes.
+# Family-Business-Management-System-A01702917
+Program elaborated in C++, for the administration of a family business.
+It is a program that serves as an administrator of the business, and helps to keep the accounts of products
+offered, and register customers, addresses, etc, to have a better record of customers.
 
-# Contexto
-Mi papá ocupaba llevar la parte administrativa de su negocio en esta pandemia, es por eso que creé este programa,
-para que ayude en el órden administrativo, y tener un registro del día a día.
+# Context
+My dad was taking care of the administrative part of his business in this pandemic, that's why I created this program,
+to help in the administrative order, and to have a day-to-day record.
 
-# Funcionamiento
-Este programa sirve como administración de un negocio, donde se llevan registros de clientes, ventas, 
-empleados y transporte con el que cuenta la empresa.
+# Functioning
+This program serves as a business administration, where records of customers, sales,
+employees and transportation that the company has.
 
-# Instrucciones de uso
-Este programa fue el elaborado con C++ standard, por lo que puede correr sin problema en cualquier sistema operativo
-Descargar los archivos con terminación ".h" y el programa que se llama "main.cpp", y correrlo en
-una terminal.
+# Instructions for use
+This program was developed with the C++ standard, so it can run without any problem on any operating system.
+Download the files ending with ".h" and the program called "main.cpp", and run it in
+a terminal.
